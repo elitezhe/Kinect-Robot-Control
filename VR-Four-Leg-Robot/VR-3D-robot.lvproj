@@ -11,8 +11,12 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Load Robot VIs" Type="Folder">
-			<Item Name="load-leg-zuohou.vi" Type="VI" URL="../load-leg-zuohou.vi"/>
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="load-robot-vr.vi" Type="VI" URL="../load-robot-vr.vi"/>
 			<Item Name="load-leg-zuoqian.vi" Type="VI" URL="../load-leg-zuoqian.vi"/>
+			<Item Name="load-leg-youqian.vi" Type="VI" URL="../load-leg-youqian.vi"/>
+			<Item Name="load-leg-zuohou.vi" Type="VI" URL="../load-leg-zuohou.vi"/>
+			<Item Name="load-leg-youhou.vi" Type="VI" URL="../load-leg-youhou.vi"/>
 		</Item>
 		<Item Name="Test Demo" Type="Folder">
 			<Item Name="test-wrl read.vi" Type="VI" URL="../test-wrl read.vi"/>
@@ -35,7 +39,8 @@
 			<Item Name="左腿2.wrl" Type="Document" URL="../左腿2.wrl"/>
 			<Item Name="左腿3.wrl" Type="Document" URL="../左腿3.wrl"/>
 		</Item>
-		<Item Name="4-leg-robot-vr.vi" Type="VI" URL="../4-leg-robot-vr.vi"/>
+		<Item Name="global-refs.vi" Type="VI" URL="../global-refs.vi"/>
+		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
