@@ -21,7 +21,10 @@
 		<Item Name="Test Demo" Type="Folder">
 			<Item Name="test-wrl read.vi" Type="VI" URL="../test-wrl read.vi"/>
 		</Item>
-		<Item Name="Transform Sub VIs" Type="Folder"/>
+		<Item Name="Transform Sub VIs" Type="Folder">
+			<Item Name="rotate-part1.vi" Type="VI" URL="../rotate-part1.vi"/>
+			<Item Name="rotate-part2.vi" Type="VI" URL="../rotate-part2.vi"/>
+		</Item>
 		<Item Name="WRL Files" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="原点位置解释.png" Type="Document" URL="../原点位置解释.png"/>
@@ -41,7 +44,7 @@
 		</Item>
 		<Item Name="global-refs.vi" Type="VI" URL="../global-refs.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="rotate-part1.vi" Type="VI" URL="../rotate-part1.vi"/>
+		<Item Name="set-angle-to-z-axis-cord.vi" Type="VI" URL="../set-angle-to-z-axis-cord.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
