@@ -41,6 +41,7 @@
 		</Item>
 		<Item Name="global-refs.vi" Type="VI" URL="../global-refs.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+		<Item Name="rotate-part1.vi" Type="VI" URL="../rotate-part1.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
