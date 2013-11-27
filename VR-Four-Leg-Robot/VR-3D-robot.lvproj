@@ -19,6 +19,8 @@
 			<Item Name="load-leg-youhou.vi" Type="VI" URL="../load-leg-youhou.vi"/>
 		</Item>
 		<Item Name="Test Demo" Type="Folder">
+			<Item Name="test-main.vi" Type="VI" URL="../test-main.vi"/>
+			<Item Name="test-scene-window.vi" Type="VI" URL="../test-scene-window.vi"/>
 			<Item Name="test-wrl read.vi" Type="VI" URL="../test-wrl read.vi"/>
 		</Item>
 		<Item Name="Transform Sub VIs" Type="Folder">
@@ -45,10 +47,10 @@
 			<Item Name="左腿3.wrl" Type="Document" URL="../左腿3.wrl"/>
 		</Item>
 		<Item Name="global-refs.vi" Type="VI" URL="../global-refs.vi"/>
-		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="LVSceneTextAlignment.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVSceneTextAlignment.ctl"/>
 				<Item Name="NI_3D Picture Control.lvlib" Type="Library" URL="/&lt;vilib&gt;/picture/3D Picture Control/NI_3D Picture Control.lvlib"/>
 			</Item>
