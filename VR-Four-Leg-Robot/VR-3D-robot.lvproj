@@ -32,10 +32,12 @@
 			<Item Name="vr-main-ctl.vi" Type="VI" URL="../vr-main-ctl.vi"/>
 		</Item>
 		<Item Name="Transform Sub VIs" Type="Folder">
+			<Item Name="rotate-body.vi" Type="VI" URL="../rotate-body.vi"/>
 			<Item Name="rotate-part1.vi" Type="VI" URL="../rotate-part1.vi"/>
 			<Item Name="rotate-part2.vi" Type="VI" URL="../rotate-part2.vi"/>
 			<Item Name="rotate-part3.vi" Type="VI" URL="../rotate-part3.vi"/>
 			<Item Name="set-angle-to-z-axis-cord.vi" Type="VI" URL="../set-angle-to-z-axis-cord.vi"/>
+			<Item Name="global-body-transv.vi" Type="VI" URL="../global-body-transv.vi"/>
 		</Item>
 		<Item Name="WRL Files" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
