@@ -16,6 +16,9 @@
 			<Item Name="tcp test.vi" Type="VI" URL="../tcp test.vi"/>
 			<Item Name="visa_write_test.vi" Type="VI" URL="../visa_write_test.vi"/>
 		</Item>
+		<Item Name="Project" Type="Folder">
+			<Item Name="VR-3D-robot.lvproj" Type="Document" URL="../../VR-Four-Leg-Robot/VR-3D-robot.lvproj"/>
+		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi">
 			<Property Name="ws.type" Type="Int">2</Property>
 		</Item>
