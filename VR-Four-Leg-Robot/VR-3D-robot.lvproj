@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="13008000">
 	<Item Name="我的电脑" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -18,10 +19,14 @@
 			<Item Name="load-leg-zuohou.vi" Type="VI" URL="../load-leg-zuohou.vi"/>
 			<Item Name="load-leg-youhou.vi" Type="VI" URL="../load-leg-youhou.vi"/>
 		</Item>
+		<Item Name="Sub VIs" Type="Folder">
+			<Item Name="init-vr-scene-window.vi" Type="VI" URL="../init-vr-scene-window.vi"/>
+		</Item>
 		<Item Name="Test Demo" Type="Folder">
 			<Item Name="test-main.vi" Type="VI" URL="../test-main.vi"/>
 			<Item Name="test-scene-window.vi" Type="VI" URL="../test-scene-window.vi"/>
 			<Item Name="test-wrl read.vi" Type="VI" URL="../test-wrl read.vi"/>
+			<Item Name="test-nisastevent.vi" Type="VI" URL="../test-nisastevent.vi"/>
 		</Item>
 		<Item Name="Transform Sub VIs" Type="Folder">
 			<Item Name="rotate-part1.vi" Type="VI" URL="../rotate-part1.vi"/>
@@ -47,6 +52,10 @@
 			<Item Name="左腿3.wrl" Type="Document" URL="../左腿3.wrl"/>
 		</Item>
 		<Item Name="global-refs.vi" Type="VI" URL="../global-refs.vi"/>
+		<Item Name="vr-main-ctl.vi" Type="VI" URL="../vr-main-ctl.vi"/>
+		<Item Name="vr-main-window.vi" Type="VI" URL="../vr-main-window.vi"/>
+		<Item Name="vr-states.ctl" Type="VI" URL="../vr-states.ctl"/>
+		<Item Name="NISAST Event.lvclass" Type="LVClass" URL="/&lt;resource&gt;/importtools/Common/Event/NISAST Event.lvclass"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
