@@ -37,18 +37,21 @@ namespace kinectControlRobot
         private int tempnum;
         const int pagenum = 15;
         const int posenum = 7;
-        private int portnum;
-        private string ipnum;
+     //   private int portnum;
+    //    private string ipnum;
         Socket clientSocket;
         Thread clientThread;
-        private int rightwave = 1;
-        private int socketopen = 0;
+    //    private int rightwave = 1;
+        private int socketopen = 1;
         private WaveGesture _WaveGesture;
         #endregion Member Variables
         #region Constructor
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();       
+
+            clientThread = new Thread(new ThreadStart(ConnectToServer));
+            clientThread.Start();
 
             this._WaveGesture = new WaveGesture();
             this._WaveGesture.GestureDetected += new EventHandler(_WaveGesture_GestureDetected);
@@ -72,7 +75,7 @@ namespace kinectControlRobot
         private void ConnectToServer()
         {
             //创建一个套接字
-            IPEndPoint ipep = new IPEndPoint(IPAddress.Parse(this.ipnum), this.portnum);
+            IPEndPoint ipep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 6001);
             // IPEndPoint ipep = new IPEndPoint(IPAddress.Parse("192.168.197.1"), this.portnum);   
             clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             //将套接字与远程服务器地址相连
@@ -138,13 +141,13 @@ namespace kinectControlRobot
                             }
                             if (ii == (pagenum - 1))
                             {
-                                CurrentPose.Text = this.tempPose[ii].Title;
+                              //  CurrentPose.Text = this.tempPose[ii].Title;
                                 this.j = 0;                               
                                 if (this.rightKey == 1)
                                 {
                                     //system.windows.forms.sendkeys.sendwait("{right}");
                                     this.rightKey = 0;
-                                    this.rightwave = 0;
+                                  //  this.rightwave = 0;
                                     if (this.socketopen == 1)
                                     {
                                         byte[] data = new byte[1024];
@@ -153,13 +156,13 @@ namespace kinectControlRobot
                                         if (this.tempPose[ii].num == 5 || this.tempPose[ii].num == 6)
                                         {
                                             this.rightKey = 1;
-                                            Thread.Sleep(700);
+                                            Thread.Sleep(500);
                                         }
                                     }
                                 }
                                 else
                                 {
-                                    this.rightwave = 1;    
+                                  //  this.rightwave = 1;    
                                     if (this.tempPose[ii].num != this.tempnum)
                                     {
                                         this.rightKey = 1;                                  
@@ -433,24 +436,10 @@ namespace kinectControlRobot
         }
         #endregion Properties
 
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            this.portnum = (int)System.Convert.ToDouble(textBox1.Text);
-            this.ipnum = textBox2.Text;
-            this.socketopen = 1 - this.socketopen;
-            if (this.socketopen == 1) textBox3.Text = "连接";
-            else textBox3.Text = "断开";
-            clientThread = new Thread(new ThreadStart(ConnectToServer));
-            clientThread.Start();
-        }
-
         private void _WaveGesture_GestureDetected(object sender, EventArgs e)
         {
-            //if (this.rightwave == 1)
-            //{
-                listBox1.Items.Add(string.Format("Wave Detected {0}", DateTime.Now.ToLongTimeString()));
-            //    this.rightKey = 0;
-            //    this.rightwave = 0;
+
+        //        listBox1.Items.Add(string.Format("Wave Detected {0}", DateTime.Now.ToLongTimeString()));
                 if (this.socketopen == 1)
                 {
                     byte[] data = new byte[1024];

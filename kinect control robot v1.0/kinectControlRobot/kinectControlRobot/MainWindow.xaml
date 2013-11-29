@@ -3,37 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:c="clr-namespace:kinectControlRobot"
         Title="MainWindow" 
-        Height="1080" Width="1920" 
-        WindowState="Maximized" 
-        Background="White"
-        TextElement.Foreground="Black">
+        WindowState="Maximized" TextElement.Foreground="Black" AllowsTransparency="True" WindowStyle="None" Opacity="1" Topmost="True">
     <Viewbox>
-        <Grid x:Name="LayoutRoot" Height="1080" Width="1920">
-            <c:SkeletonViewer x:Name="SkeletonViewerElement"/>
-            <Canvas x:Name="HandCanvas">
-                <Image x:Name="RightHandElement" Source="/kinectControlRobot;component/Images/hand.png" Visibility="Collapsed" Height="100" Width="100"/>
-                <Image x:Name="LeftHandElement" Source="/kinectControlRobot;component/Images/hand.png" Visibility="Collapsed" Height="100" Width="100">
-                    <Image.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="-1"/>
-                            <TranslateTransform X="100"/>
-                        </TransformGroup>
-                    </Image.RenderTransform>
-                </Image>
-                <StackPanel Width="600" Canvas.Left="80" Canvas.Top="220">
-                    <TextBlock x:Name="CurrentPose0" Text="CurrentPose0" FontSize="45" TextAlignment="Center" TextWrapping="Wrap" UseLayoutRounding="False" />
-                </StackPanel>
-                <TextBlock x:Name="CurrentPose" Text="CurrentPose" FontSize="45" TextAlignment="Center" TextWrapping="Wrap" Canvas.Left="705" Canvas.Top="210" Width="420" />
-                <Button Canvas.Left="202" Canvas.Top="38" Content="连接到ip" Height="102" Name="button1" Width="264" Click="button1_Click" FontSize="40" />
-                <TextBox Canvas.Left="600" Canvas.Top="34" Height="36" Name="textBox1" Width="74" Text="6001" FontSize="25" />
-                <Label Canvas.Left="488" Canvas.Top="32" Content="端口号" Height="42" Name="label1" Width="88" FontSize="25" />
-                <Label Canvas.Left="490" Canvas.Top="93" Content="ip地址" Height="46" Name="label2" Width="84" FontSize="25" />
-                <TextBox Canvas.Left="602" Canvas.Top="100" Height="38" Name="textBox2" Width="195" Text="127.0.0.1" FontSize="25" />
-                <TextBox Canvas.Left="710" Canvas.Top="38" Height="48" Name="textBox3" Width="78" FontSize="30" Text="断开" />
-                <TextBox Canvas.Left="860" Canvas.Top="37" Height="37" Name="textBox4" Width="215" Text="本机ip：127.0.0.1" FontSize="24" />
-                <TextBox Canvas.Left="860" Canvas.Top="103" Height="38" Name="textBox5" Width="305" Text="张指导ip：192.168.197.1" FontSize="24" />
-                <ListBox Canvas.Left="210" Canvas.Top="302" Height="93" Name="listBox1" Width="231" />
+        <Grid x:Name="LayoutRoot" Height="1200" Width="1920" Background="#00000000">
+            <c:SkeletonViewer x:Name="SkeletonViewerElement" Background="#00000000" />
+            <Canvas x:Name="HandCanvas" Background="#00000000">
+                <StackPanel Width="600" Canvas.Left="80" Canvas.Top="220" Background="#00000000"></StackPanel>
             </Canvas>
+            <c:SkeletonViewer HorizontalAlignment="Left" Margin="640,-19,0,0" x:Name="skeletonViewer1" VerticalAlignment="Top" />
         </Grid>
     </Viewbox>
+    <Window.Background>
+        <SolidColorBrush />
+    </Window.Background>
 </Window>
