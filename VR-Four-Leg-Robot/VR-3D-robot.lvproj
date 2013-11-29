@@ -22,6 +22,7 @@
 		<Item Name="Sub VIs" Type="Folder">
 			<Item Name="vr-states.ctl" Type="VI" URL="../vr-states.ctl"/>
 			<Item Name="global-refs.vi" Type="VI" URL="../global-refs.vi"/>
+			<Item Name="process-percent.vi" Type="VI" URL="../process-percent.vi"/>
 			<Item Name="init-vr-scene-window.vi" Type="VI" URL="../init-vr-scene-window.vi"/>
 		</Item>
 		<Item Name="Test Demo" Type="Folder">
