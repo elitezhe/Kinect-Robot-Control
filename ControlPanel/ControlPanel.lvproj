@@ -24,6 +24,7 @@
 		</Item>
 		<Item Name="states.ctl" Type="VI" URL="../states.ctl"/>
 		<Item Name="execute-exe.vi" Type="VI" URL="../execute-exe.vi"/>
+		<Item Name="killtask-exe.vi" Type="VI" URL="../killtask-exe.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
