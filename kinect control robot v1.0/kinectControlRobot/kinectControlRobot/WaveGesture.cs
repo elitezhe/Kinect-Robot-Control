@@ -55,8 +55,10 @@ namespace kinectControlRobot
         {
             JointType handJointId = (isLeft) ? JointType.HandLeft : JointType.HandRight;
             JointType elbowJointId = (isLeft) ? JointType.ElbowLeft : JointType.ElbowRight;
+            JointType headJointId = JointType.Head;
             Joint hand = skeleton.Joints[handJointId];
             Joint elbow = skeleton.Joints[elbowJointId];
+            Joint head = skeleton.Joints[headJointId];
 
 
             if (hand.TrackingState != JointTrackingState.NotTracked && elbow.TrackingState != JointTrackingState.NotTracked)
@@ -66,9 +68,9 @@ namespace kinectControlRobot
                     tracker.UpdateState(WaveGestureState.Failure, timestamp);
                     System.Diagnostics.Debug.WriteLine("Fail!");
                 }
-                else if (hand.Position.Y > elbow.Position.Y)
+                else if ((hand.Position.Y > elbow.Position.Y) && (hand.Position.Y < (head.Position.Y + 0.13)))
                 {
-                    //Using the raw values where (0, 0) is the middle of the screen.  From the user's perspective, the X-Axis grows more negative left and more positive right.
+                    
                     if (hand.Position.X <= elbow.Position.X - WAVE_THRESHOLD)
                     {
                         tracker.UpdatePosition(WavePosition.Left, timestamp);

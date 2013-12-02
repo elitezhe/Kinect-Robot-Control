@@ -258,8 +258,8 @@ namespace kinectControlRobot
             this.poseLibrary[2].Title = "gogog";
             this.poseLibrary[2].num = 2;
             this.poseLibrary[2].Angles = new PoseAngle[4];
-            this.poseLibrary[2].Angles[0] = new PoseAngle(JointType.ShoulderLeft, JointType.ElbowLeft, 100, 20);
-            this.poseLibrary[2].Angles[1] = new PoseAngle(JointType.ElbowLeft, JointType.WristLeft, 95, 20);
+            this.poseLibrary[2].Angles[0] = new PoseAngle(JointType.ShoulderLeft, JointType.ElbowLeft, 125, 20);
+            this.poseLibrary[2].Angles[1] = new PoseAngle(JointType.ElbowLeft, JointType.WristLeft, 95, 25);
             this.poseLibrary[2].Angles[2] = new PoseAngle(JointType.ShoulderRight, JointType.ElbowRight, 270, 30);
             this.poseLibrary[2].Angles[3] = new PoseAngle(JointType.ElbowRight, JointType.WristRight, 270, 30);
 
@@ -271,8 +271,8 @@ namespace kinectControlRobot
             this.poseLibrary[3].Angles = new PoseAngle[4];
             this.poseLibrary[3].Angles[0] = new PoseAngle(JointType.ShoulderLeft, JointType.ElbowLeft, 270, 30);
             this.poseLibrary[3].Angles[1] = new PoseAngle(JointType.ElbowLeft, JointType.WristLeft, 270, 30);
-            this.poseLibrary[3].Angles[2] = new PoseAngle(JointType.ShoulderRight, JointType.ElbowRight, 80, 20);
-            this.poseLibrary[3].Angles[3] = new PoseAngle(JointType.ElbowRight, JointType.WristRight, 85, 20);
+            this.poseLibrary[3].Angles[2] = new PoseAngle(JointType.ShoulderRight, JointType.ElbowRight, 55, 20);
+            this.poseLibrary[3].Angles[3] = new PoseAngle(JointType.ElbowRight, JointType.WristRight, 85, 25);
 
 
             //Pose 4 - 伸开双臂 Arms Extended
@@ -291,8 +291,8 @@ namespace kinectControlRobot
             this.poseLibrary[5].Title = "leftt";
             this.poseLibrary[5].num = 5;
             this.poseLibrary[5].Angles = new PoseAngle[4];
-            this.poseLibrary[5].Angles[0] = new PoseAngle(JointType.ShoulderLeft, JointType.ElbowLeft, 185, 20);
-            this.poseLibrary[5].Angles[1] = new PoseAngle(JointType.ElbowLeft, JointType.WristLeft, 190, 20);
+            this.poseLibrary[5].Angles[0] = new PoseAngle(JointType.ShoulderLeft, JointType.ElbowLeft, 185, 25);
+            this.poseLibrary[5].Angles[1] = new PoseAngle(JointType.ElbowLeft, JointType.WristLeft, 180, 25);
             this.poseLibrary[5].Angles[2] = new PoseAngle(JointType.ShoulderRight, JointType.ElbowRight, 270, 30);
             this.poseLibrary[5].Angles[3] = new PoseAngle(JointType.ElbowRight, JointType.WristRight, 270, 30);
 
@@ -304,8 +304,8 @@ namespace kinectControlRobot
             this.poseLibrary[6].Angles = new PoseAngle[4];
             this.poseLibrary[6].Angles[0] = new PoseAngle(JointType.ShoulderLeft, JointType.ElbowLeft, 270, 30);
             this.poseLibrary[6].Angles[1] = new PoseAngle(JointType.ElbowLeft, JointType.WristLeft, 270, 30);
-            this.poseLibrary[6].Angles[2] = new PoseAngle(JointType.ShoulderRight, JointType.ElbowRight, 355, 20);
-            this.poseLibrary[6].Angles[3] = new PoseAngle(JointType.ElbowRight, JointType.WristRight, 350, 20);
+            this.poseLibrary[6].Angles[2] = new PoseAngle(JointType.ShoulderRight, JointType.ElbowRight, 355, 25);
+            this.poseLibrary[6].Angles[3] = new PoseAngle(JointType.ElbowRight, JointType.WristRight, 0, 25);
         }
 
 
